@@ -14,8 +14,9 @@
 //Slider for certificate section
 
 $(document).ready(function () {
-   $('.slider').slick({
+   $('.certificates-slider').slick({
       arrows: true,
+      dots: false,
       slidesToShow: 3,
       appendArrows: $('.slider-arrows-container'),
       variableWidth: true,
@@ -24,9 +25,17 @@ $(document).ready(function () {
          {
             breakpoint: 768,
             settings: {
-               variableWidth: false,
-               centerMode: false,
-               slidesToShow: 2,
+               slidesToShow: 2
+            }
+         },
+         {
+            breakpoint: 325,
+            settings: {
+               arrows: false,
+               dots: true,
+               slidesToShow: 1,
+               centerMode: true,
+               infinite: true,
             }
          }
       ]
@@ -78,13 +87,22 @@ $(document).ready(function () {
          {
             breakpoint: 960,
             settings: {
-               // variableWidth: true,
+               variableWidth: true,
                // centerMode: true,
                slidesToShow: 2,
             }
+         }, {
+
+            breakpoint: 325,
+            settings: {
+               slidesToShow: 1,
+               variableWidth: true,
+               appendArrows: false,
+               arrows: true,
+
+            }
          }
       ]
-
 
 
    });
