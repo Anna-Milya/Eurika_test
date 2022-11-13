@@ -1,0 +1,301 @@
+@media (max-width: 960px) {
+
+   body {
+      background-color: rgb(210, 210, 210);
+   }
+
+   .delivery {
+
+      .main-title {
+         font-size: 40px;
+         text-align: center;
+      }
+
+      .delivery__title {
+         margin-bottom: 20px;
+      }
+
+      .title {
+         font-size: 30px;
+         text-align: center;
+      }
+
+      .delivery-form {
+         padding: 50px;
+      }
+
+      .form {
+         flex-wrap: wrap;
+         justify-content: center;
+
+         .submit-btn {
+            width: 273px;
+         }
+      }
+
+      .checkbox-input {
+         justify-content: center;
+      }
+
+   }
+
+   .price {
+      .title {
+         font-size: 30px;
+         text-align: center;
+      }
+   }
+
+   .fuel-purchase {
+      .title {
+         font-size: 30px;
+         text-align: center;
+      }
+
+      .fuel-purchase-flex {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .submit-btn {
+         left: 50%;
+         position: relative;
+         transform: translate(-50%, 0);
+      }
+
+      .fuel-summary {
+         margin-bottom: 100px;
+      }
+   }
+
+
+   .ordering-process {
+      .title {
+         font-size: 30px;
+         text-align: center;
+      }
+
+      .ordering-process-cards {
+         justify-content: center;
+         gap: 15px;
+      }
+
+   }
+
+   .service-advantages {
+      .title {
+         font-size: 30px;
+         text-align: center;
+      }
+
+
+      .service-advantages-flex {
+         justify-content: center;
+         align-items: center;
+         gap: 15px;
+      }
+   }
+
+   .certificates {
+      .title {
+         font-size: 30px;
+         text-align: center;
+      }
+   }
+
+
+   .partners {
+      .title {
+         font-size: 30px;
+         text-align: center;
+      }
+
+   }
+
+   .review {
+      .title {
+         font-size: 30px;
+         text-align: center;
+      }
+   }
+
+   .book-call {
+
+      .book-call__wrapper {
+         padding: 50px 0 50px;
+      }
+
+      .form {
+         flex-wrap: wrap;
+         justify-content: center;
+         column-gap: 20px;
+         row-gap: 20px;
+      }
+
+      .book-call-agreement__text {
+         margin-bottom: 20px;
+      }
+
+   }
+
+
+
+}
+
+
+
+@media (max-width: 768px) {
+
+   body {
+      background-color: rgb(210, 210, 210);
+   }
+
+   // Header
+   .header {
+      .header-top {
+         justify-content: flex-start;
+      }
+
+      &-contacts {
+
+         &-mail,
+         &-cabinet {
+            display: none;
+         }
+
+         &-phone {
+            margin-left: 140px;
+            margin-right: 0;
+         }
+      }
+
+      &-row {
+         display: none;
+      }
+   }
+
+
+   //Delivery 
+   .delivery {
+
+      .main-title {
+         font-size: 35px;
+      }
+
+      .title {
+         font-size: 30px;
+         text-align: center;
+      }
+   }
+
+
+   //Fuel Purchase
+   .fuel-purchase {
+      .fuel-purchase-flex {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .submit-btn {
+         left: 50%;
+         position: relative;
+         transform: translate(-50%, 0);
+      }
+
+   }
+
+
+
+   //Service Advantages 
+   .service-advantages {
+      .service-advantages-flex {
+         justify-content: center;
+         align-items: center;
+         gap: 15px;
+      }
+   }
+
+
+   // Certificates 
+
+   .certificates {
+      .certificates__wrapper .slider-arrows-container .slick-arrow {
+         top: 43px;
+      }
+   }
+
+   //Review
+
+   .review {
+
+      .review__wrapper .review-arrows-container .slick-arrow {
+         position: absolute;
+         top: 30px;
+      }
+
+      .review-item {
+         margin-right: 5px;
+         padding: 15px;
+      }
+
+
+   }
+
+   //Book call
+   .book-call {
+      .form {
+         flex-direction: column;
+      }
+
+      .book-call__wrapper .call-form .form .submit-call-btn {
+         width: 273px;
+      }
+   }
+
+
+   //Footer
+   .footer {
+      .footer-top {
+         column-gap: 20px;
+
+         .footer-top-copyright__text {
+            font-size: 12px;
+         }
+
+         .footer-top-menu {
+            justify-content: center;
+            row-gap: 35px;
+            column-gap: 15px;
+         }
+
+         .footer-top-contacts__phone {
+            font-size: 14px;
+         }
+      }
+
+   }
+
+}
+
+
+
+@media (max-width: 320px) {
+
+   .form {
+      max-width: 300px;
+
+      .form-item {
+         width: 100%;
+         min-width: 250px;
+
+         .form-input--wide {
+            width: 100%;
+            min-width: 250px;
+         }
+      }
+
+
+   }
+}

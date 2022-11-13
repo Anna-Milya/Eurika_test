@@ -1,0 +1,62 @@
+body {
+   font-family: $default-font-family;
+   font-size: $default-font-size;
+   color: $black;
+}
+
+
+.container {
+   width: 100%;
+   max-width: $content-width;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+input {
+   max-width: 100%;
+}
+
+img {
+   max-width: 100%;
+}
+
+a {
+   display: inline-block;
+}
+
+.form {
+   width: 100%;
+}
+
+.none {
+   display: none;
+}
+
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+
+
+
+//Sticky Footer 
+.main-content {
+   flex-grow: 1;
+}
+
+
+.main-title {
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 59px;
+   color: $black
+}
+
+.title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 44px;
+   color: $black;
+}
