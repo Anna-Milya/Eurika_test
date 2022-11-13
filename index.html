@@ -150,12 +150,12 @@
                         <form class="form" action="/" method="post">
                            <div class="form-item">
                               <label for="name" class="form-text">Ваше имя</label>
-                              <input type="text" required name="name" class="form-input" placeholder="Иван"
+                              <input type="text" required="required" name="name" class="form-input" placeholder="Иван"
                                  autocomplete="off" value="">
                            </div>
                            <div class="form-item">
                               <label for="phone" class="form-text">Номер телефона</label>
-                              <input type="tеl" required name="phone" class="form-input phone"
+                              <input type="tеl" required="required" name="phone" class="form-input phone"
                                  placeholder="+7 (___) ___-__-__" autocomplete="off" value="">
                            </div>
                            <button type="submit" class="submit-btn btn">Заказать топливо</button>
@@ -165,7 +165,7 @@
 
                      </div>
                      <div class="delivery-form__checkbox checkbox-input">
-                        <input type="checkbox" name="checkbox" required class="checkbox-input__box" value="">
+                        <input type="checkbox" name="checkbox" required="required" class="checkbox-input__box" value="">
                         <label for="checkbox" class="checkbox-input__text">
                            Я
                            согласен
@@ -180,19 +180,19 @@
 
          <section class="price">
             <div class="container">
-               <div class="price__title title">
+               <h2 class="price__title title">
                   Стоимость топлива
-               </div>
+               </h2>
                <div class="price__wrapper">
                   <table class="price-table">
 
                      <thead>
                         <tr>
-                           <th width="163">Сорт топлива</th>
-                           <th width="286">Экологический класс</th>
-                           <th width="300">Производитель</th>
-                           <th width="">Наличный расчет</th>
-                           <th width="">Безналичный расчет</th>
+                           <th>Сорт топлива</th>
+                           <th>Экологический класс</th>
+                           <th>Производитель</th>
+                           <th>Наличный расчет</th>
+                           <th>Безналичный расчет</th>
                         </tr>
                      </thead>
 
@@ -289,8 +289,9 @@
                            <td>43.98 р.</td>
                         </tr>
                      </tbody>
+                  </table>
                </div>
-               </table>
+
             </div>
          </section>
 
@@ -303,7 +304,7 @@
                   <div class="fuel-purchase-flex">
                      <!-- fuel-purchase-form -->
                      <div class="fuel-purchase-form">
-                        <form class="form" action="post" method="/">
+                        <form class="form" action="/" method="post">
 
                            <div class="fuel-purchase__item form-item">
                               <label for="fuel-type" class="form-text">Вид топлива</label>
@@ -334,12 +335,12 @@
                            <div class="fuel-purchase__item form-item">
                               <label for="name" class="form-text">Ваше имя</label>
                               <input type="text" name="name" class="form-input form-input--wide" placeholder="Иван"
-                                 autocomplete="off" value="" required>
+                                 autocomplete="off" value="" required="required">
                            </div>
                            <div class="fuel-purchase__item form-item">
                               <label for="phone" class="form-text">Номер телефона</label>
                               <input type="tеl" name="phone" class="form-input form-input--wide phone"
-                                 placeholder="+7 (___) ___-__-__" autocomplete="off" value="" required>
+                                 placeholder="+7 (___) ___-__-__" autocomplete="off" value="" required="required">
                            </div>
 
                         </form>
@@ -384,7 +385,6 @@
                               </div>
 
                               <button type="submit" class="submit-btn btn">Заказать топливо</button>
-                              </button>
 
                            </div>
                         </div>
@@ -408,7 +408,7 @@
                         <div class="item-box">
                            <div class="item-box__text">1-3 мин.</div>
                            <a href="" class="item-box__icon-link"> <img src="./img/Icons-work/Icon-arrow.svg"
-                                 class="item-box__icon-arrow" alt="icon-arrow"></img></a>
+                                 class="item-box__icon-arrow" alt="icon-arrow"></a>
                         </div>
                         <img src="./img/Icons-work/Icon-click.svg" alt="icon-click" class="item-icon">
                         <p class="item-title">Оформление заявки</p>
@@ -419,8 +419,8 @@
                      <div class="ordering-process-cards__item item-block">
                         <div class="item-box">
                            <div class="item-box__text">1-3 мин.</div>
-                           <a href="" class="item-box__icon-link"> <img src="./img/Icons-work/Icon-arrow.svg"
-                                 class="item-box__icon-arrow" alt="icon-arrow"></img></a>
+                           <a href="#" class="item-box__icon-link"> <img src="./img/Icons-work/Icon-arrow.svg"
+                                 class="item-box__icon-arrow" alt="icon-arrow"></a>
                         </div>
                         <img src="./img/Icons-work/Icon-phone.svg" alt="icon-phone" class="item-icon">
                         <p class="item-title">Подтверждение заявки менеджером</p>
@@ -432,7 +432,7 @@
                            <div class="item-box__text">30-90 мин.</div>
 
                            <a href="" class="item-box__icon-link"> <img src="./img/Icons-work/Icon-arrow.svg"
-                                 class="item-box__icon-arrow" alt="icon-arrow" hidden></img></a>
+                                 class="item-box__icon-arrow" alt="icon-arrow" hidden></a>
                         </div>
                         <img src="./img/Icons-work/Icon-gas.svg" alt="icon-gas" class="item-icon">
                         <p class="item-title">Заправка вашего автомобиля</p>
@@ -566,7 +566,7 @@
          <section class="partners">
             <div class="container">
                <div class="partners__wrapper">
-                  <div class="partners__title title">Наши партнеры</div>
+                  <h2 class="partners__title title">Наши партнеры</h2>
                   <div class="partners-body ">
                      <div class="slider-partners">
                         <div class="slider-partners__item">
@@ -672,11 +672,11 @@
                         <form class="form" action="/" method="post">
                            <div class="form-item">
                               <input type="text" name="name" class="form-input" placeholder="Ваше имя"
-                                 autocomplete="off" required>
+                                 autocomplete="off" required="required">
                            </div>
                            <div class="form-item">
                               <input type="tеl" class="form-input phone" placeholder="Номер телефона" autocomplete="off"
-                                 required>
+                                 required="required">
                            </div>
 
                            <button type="submit" class="submit-call-btn btn">Перезвоните мне</button>
@@ -727,7 +727,7 @@
                </div>
                <div class="footer-top-contacts">
                   <div class="footer-top-contacts__title">Отдел продаж</div>
-                  <a href="tel:8 (495) 127-81-70" class="footer-top-contacts__phone">8 (495) 127-81-70</a>
+                  <a href="tel:8(495)127-81-70" class="footer-top-contacts__phone">8 (495) 127-81-70</a>
                </div>
 
             </div>
